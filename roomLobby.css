@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color:; */
+    color: #fcbf49;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/image2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#input-box{
+    padding: 2em;
+    max-width: 1200px;
+    background-color: #003049;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #d62828;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.room-item{
+    margin: 15px;
+    background-color: #003049;
+    border: 5px solid #d62828;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 15px;
+    animation: popIn 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes popIn {
+    0%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px #003049;
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: none
+    }
+}
+
+#name-input{
+    border: none;
+    border-bottom: 3px solid #d62828;
+    width: 250px;
+    margin: 20px;
+    background-color: transparent;
+    color: #fcbf49;
+}
+
+.button{
+    width: 100px;
+    /* height: 50px; */
+    border: 5px solid #d62828;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #fcbf49;
+    color: black;
+}
+
+#leave-button{
+    padding: 1em;
+    background-color: #d62828;
+    border: 3px solid #003049;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    align-self: flex-start;
+}

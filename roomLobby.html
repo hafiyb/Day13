@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="roomLobby.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        
+        <div id="input-box">
+            
+            <h1>Welcome, <span id="spanName"></span></h1>
+            <br>
+            <div>
+                <input type="text" placeholder="Want to create a new room?" id="name-input">
+                <button onclick="createRoom()" class="button">Create room</button>
+            </div>
+            <br>
+            <div id="room-container"></div>
+            <button id="leave-button" onclick="goBack()"><i class="fas fa-chevron-left"></i>  Leave</button>
+        </div>
+    </div>
+</body>
+<!--firebase-app-->
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script> 
+<!--firebase-real-time-->
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script> 
+<script src="roomLobby.js"></script>
+</html>
